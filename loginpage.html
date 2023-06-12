@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="loginpage.css" />
+  </head>
+  <body>
+    <div class="content">
+      <div class="mainbody">
+        <div>
+          <h1 class="textfont">Login your Account</h1>
+        </div>
+        <div class="namefield">
+          <input id="input-name" type="text" placeholder=" Name" />
+          <div class="error">
+            <span id="span1" class="span0">Name can't be blank</span>
+            <span id="span2" class="span0"
+              >Name must contain alphabets only</span
+            >
+          </div>
+        </div>
+        <div class="namefield">
+          <input id="input-mail" type="text" placeholder=" Email" />
+          <div class="error">
+            <span id="span3" class="span0">Email can't be blank</span>
+            <span id="span4" class="span0">Email in invalid</span>
+          </div>
+        </div>
+        <div class="namefield">
+          <input id="input-password" type="password" placeholder=" Password" maxlength="12" minlength="6"/>
+          <div class="error">
+            <span id="span5" class="span0">Password can't be blank</span>
+            <span id="span6" class="span0">Password should be 6-10 letters</span>
+            <!-- <span id="span7" class="span0">should Uppercase </span> -->
+          </div>
+        </div>
+        <div>
+          <input
+          class="create-btn"
+          type="button"
+          onclick="onSubmit()"
+            value="Create"
+          />
+        </div>
+      </div>
+    </div>
+<script src="loginpage.js"></script>
+  </body>
+</html>
